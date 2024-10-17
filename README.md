@@ -1,2 +1,3 @@
 # CerberusTrack – Vigilância e Controle em Cada Rota
 CerberusTrack é um sistema de controle de frota voltado para otimizar a gestão de veículos e operações de transporte. Composto por um dashboard para supervisores e um aplicativo móvel para motoristas, a solução oferece funcionalidades como autenticação segura, notificações por e-mail e monitoramento contínuo das rotas. Inspirado na mitologia, o nome reflete a ideia de vigilância constante e proteção. O objetivo é garantir eficiência, segurança e transparência nas operações de transporte, facilitando a tomada de decisões estratégicas e o controle operacional.
+![aplicação](https://github.com/user-attachments/assets/a090208b-669f-4986-9f62-247d36b5055b)
