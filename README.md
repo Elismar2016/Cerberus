@@ -53,12 +53,12 @@ Fluxo de Comunicação entre Componentes:
 4.	Atualização de Dados no Dashboard
 •		Os dados de viagem e status são automaticamente atualizados no dashboard desktop para acompanhamento em tempo real.
 ________________________________________
-Tecnologias Sugeridas:
-•	Backend: Node.js, Python (Django/Flask), ou Java (Spring Boot).
-•	Banco de Dados: PostgreSQL, MySQL, ou MongoDB.
+Tecnologias :
+•	Backend: Python (Django/Flask).
+•	Banco de Dados:  MySQL.
 •	Mobile App: Flutter ou React Native para suporte a Android e iOS.
-•	Desktop Dashboard: React.js ou Angular para frontend, com Electron para versão desktop se necessário.
+•	Desktop Dashboard: React.js .
 •	Push Notifications: Firebase Cloud Messaging (FCM).
 •	Autenticação: JWT (JSON Web Tokens).
-•	Hospedagem: AWS, Azure, ou DigitalOcean para alta disponibilidade.
+
 
