@@ -56,6 +56,8 @@ ________________________________________
 Tecnologias :
 •	Backend: Python (Django/Flask).
 •	Banco de Dados:  MySQL.
+![image](https://github.com/user-attachments/assets/60e88885-f4c3-4d23-9367-a88cd97849f1)
+
 •	Mobile App: Flutter ou React Native para suporte a Android e iOS.
 •	Desktop Dashboard: React.js .
 •	Push Notifications: Firebase Cloud Messaging (FCM).
