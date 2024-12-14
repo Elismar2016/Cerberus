@@ -55,7 +55,8 @@ Fluxo de Comunicação entre Componentes:
 ________________________________________
 Tecnologias :
 •	Backend: Python (Django/Flask).
-•	Banco de Dados:  MySQL.
+•	Banco de Dados:  MySQL. 8.4   cerberus_db  
+ 
 ![image](https://github.com/user-attachments/assets/60e88885-f4c3-4d23-9367-a88cd97849f1)
 
 •	Mobile App: Flutter ou React Native para suporte a Android e iOS.
