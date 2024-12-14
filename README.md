@@ -55,6 +55,8 @@ Fluxo de Comunicação entre Componentes:
 ________________________________________
 Tecnologias :
 •	Backend: Python (Django/Flask).
+Model :![models_cerberusTrack](https://github.com/user-attachments/assets/6ded97e5-135f-4faf-bb53-9fffa1390156)
+
 •	Banco de Dados:  MySQL. 8.4   cerberus_db  
  
 ![image](https://github.com/user-attachments/assets/60e88885-f4c3-4d23-9367-a88cd97849f1)
