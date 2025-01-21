@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+<head>
+<title>CZS - em andamento | Modificar viagem | Site de administração do Django</title>
+<link rel="stylesheet" href="/static/admin/css/base.css">
+
+  <link rel="stylesheet" href="/static/admin/css/dark_mode.css">
+  <script src="/static/admin/js/theme.js"></script>
+
+
+  <link rel="stylesheet" href="/static/admin/css/nav_sidebar.css">
+  <script src="/static/admin/js/nav_sidebar.js" defer></script>
+
+<link rel="stylesheet" href="/static/admin/css/forms.css">
+
+
+<script src="/admin/jsi18n/"></script>
+<script src="/static/admin/js/vendor/jquery/jquery.js"></script>
+<script src="/static/admin/js/calendar.js"></script>
+<script src="/static/admin/js/jquery.init.js"></script>
+<script src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
+<script src="/static/admin/js/core.js"></script>
+<script src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script src="/static/admin/js/actions.js"></script>
+<script src="/static/admin/js/urlify.js"></script>
+<script src="/static/admin/js/prepopulate.js"></script>
+<script src="/static/admin/js/vendor/xregexp/xregexp.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/admin/css/responsive.css">
+    
+
+<meta name="robots" content="NONE,NOARCHIVE">
+</head>
+
+<body class=" app-tracking model-viagem change-form"
+  data-admin-utc-offset="-18000">
+<a href="#content-start" class="skip-to-content-link">Ir para o conteúdo principal</a>
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    
+      <header id="header">
+        <div id="branding">
+        
+<div id="site-name"><a href="/admin/">Administração do Django</a></div>
+
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Bem-vindo(a),
+                <strong>elismar</strong>.
+            
+            
+                
+                    <a href="/">Ver o site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Alterar senha</a> /
+                
+                <form id="logout-form" method="post" action="/admin/logout/">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="AAfnrsgST3OglZJXP2YiQ3jwct8w4JgnJCBs891Bu3KYTKnyuq3baO7d1SQ4wZ4T">
+                    <button type="submit">Encerrar sessão</button>
+                </form>
+                
+<button class="theme-toggle">
+  <span class="visually-hidden theme-label-when-auto">Alternar tema (tema atual: automático)</span>
+  <span class="visually-hidden theme-label-when-light">Alternar tema (tema atual: claro)</span>
+  <span class="visually-hidden theme-label-when-dark">Alternar tema (tema atual: escuro)</span>
+  <svg aria-hidden="true" class="theme-icon-when-auto">
+    <use xlink:href="#icon-auto" />
+  </svg>
+  <svg aria-hidden="true" class="theme-icon-when-dark">
+    <use xlink:href="#icon-moon" />
+  </svg>
+  <svg aria-hidden="true" class="theme-icon-when-light">
+    <use xlink:href="#icon-sun" />
+  </svg>
+</button>
+
+            
+        </div>
+        
+        
+        
+      </header>
+    
+    <!-- END Header -->
+    
+      <nav aria-label="Marcas de navegação">
+        
+<div class="breadcrumbs">
+<a href="/admin/">Início</a>
+&rsaquo; <a href="/admin/tracking/">Tracking</a>
+&rsaquo; <a href="/admin/tracking/viagem/">Viagems</a>
+&rsaquo; CZS - em andamento
+</div>
+
+      </nav>
+    
+    
+
+    <div class="main" id="main">
+      
+        
+          
+<button class="sticky toggle-nav-sidebar" id="toggle-nav-sidebar" aria-label="Alternar navegação"></button>
+<nav class="sticky" id="nav-sidebar" aria-label="Barra Lateral">
+  <input type="search" id="nav-filter"
+         placeholder="Comece a digitar para filtrar…"
+         aria-label="Filtrar itens de navegação">
+  
+
+
+  
+    <div class="app-auth module">
+      <table>
+        <caption>
+          <a href="/admin/auth/" class="section" title="Modelos na aplicação Autenticação e Autorização">Autenticação e Autorização</a>
+        </caption>
+        
+          
+            <tr class="model-group">
+              <th scope="row" id="auth-group">
+                
+                  <a href="/admin/auth/group/">Grupos</a>
+                
+              </th>
+
+              
+                <td><a href="/admin/auth/group/add/" class="addlink" aria-describedby="auth-group">Adicionar</a></td>
+              
+
+              
+            </tr>
+          
+        
+      </table>
+    </div>
+  
+    <div class="app-tracking module current-app">
+      <table>
+        <caption>
+          <a href="/admin/tracking/" class="section" title="Modelos na aplicação Tracking">Tracking</a>
+        </caption>
+        
+          
+            <tr class="model-motorista">
+              <th scope="row" id="tracking-motorista">
+                
+                  <a href="/admin/tracking/motorista/">Motoristas</a>
+                
+              </th>
+
+              
+                <td><a href="/admin/tracking/motorista/add/" class="addlink" aria-describedby="tracking-motorista">Adicionar</a></td>
+              
+
+              
+            </tr>
+          
+        
+          
+            <tr class="model-supervisor">
+              <th scope="row" id="tracking-supervisor">
+                
+                  <a href="/admin/tracking/supervisor/">Supervisors</a>
+                
+              </th>
+
+              
+                <td><a href="/admin/tracking/supervisor/add/" class="addlink" aria-describedby="tracking-supervisor">Adicionar</a></td>
+              
+
+              
+            </tr>
+          
+        
+          
+            <tr class="model-customuser">
+              <th scope="row" id="tracking-customuser">
+                
+                  <a href="/admin/tracking/customuser/">Usuários</a>
+                
+              </th>
+
+              
+                <td><a href="/admin/tracking/customuser/add/" class="addlink" aria-describedby="tracking-customuser">Adicionar</a></td>
+              
+
+              
+            </tr>
+          
+        
+          
+            <tr class="model-veiculo">
+              <th scope="row" id="tracking-veiculo">
+                
+                  <a href="/admin/tracking/veiculo/">Veiculos</a>
+                
+              </th>
+
+              
+                <td><a href="/admin/tracking/veiculo/add/" class="addlink" aria-describedby="tracking-veiculo">Adicionar</a></td>
+              
+
+              
+            </tr>
+          
+        
+          
+            <tr class="model-viagem current-model">
+              <th scope="row" id="tracking-viagem">
+                
+                  <a href="/admin/tracking/viagem/" aria-current="page">Viagems</a>
+                
+              </th>
+
+              
+                <td><a href="/admin/tracking/viagem/add/" class="addlink" aria-describedby="tracking-viagem">Adicionar</a></td>
+              
+
+              
+            </tr>
+          
+        
+      </table>
+    </div>
+  
+
+
+</nav>
+
+        
+      
+      <main id="content-start" class="content" tabindex="-1">
+        
+          
+        
+        <!-- Content -->
+        <div id="content" class="colM">
+          
+          <h1>Modificar viagem</h1>
+          <h2>CZS - em andamento</h2>
+          <div id="content-main">
+
+
+  <ul class="object-tools">
+    
+      
+
+<li>
+    
+    <a href="/admin/tracking/viagem/1/history/" class="historylink">Histórico</a>
+</li>
+
+
+
+    
+  </ul>
+
+
+<form method="post" id="viagem_form" novalidate><input type="hidden" name="csrfmiddlewaretoken" value="AAfnrsgST3OglZJXP2YiQ3jwct8w4JgnJCBs891Bu3KYTKnyuq3baO7d1SQ4wZ4T">
+<div>
+
+
+
+
+
+
+
+  
+<fieldset class="module aligned ">
+    
+    
+    
+        <div class="form-row field-motorista">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required" for="id_motorista">Motorista:</label>
+                                
+                                    <div class="related-widget-wrapper" data-model-ref="motorista">
+    <select name="motorista" data-context="available-source" required id="id_motorista">
+  <option value="">---------</option>
+
+  <option value="1" selected>Regis</option>
+
+</select>
+    
+        <a class="related-widget-wrapper-link change-related" id="change_id_motorista"
+            data-href-template="/admin/tracking/motorista/__fk__/change/?_to_field=id&amp;_popup=1"
+            data-popup="yes"
+            title="Alterar motorista selecionado"><img src="/static/admin/img/icon-changelink.svg" alt="" width="20" height="20"></a><a class="related-widget-wrapper-link add-related" id="add_id_motorista"
+            data-popup="yes"
+            href="/admin/tracking/motorista/add/?_to_field=id&amp;_popup=1"
+            title="Adicionar outro motorista"><img src="/static/admin/img/icon-addlink.svg" alt="" width="20" height="20"></a><a class="related-widget-wrapper-link view-related" id="view_id_motorista"
+             data-href-template="/admin/tracking/motorista/__fk__/change/?_to_field=id"
+             title="Visualizar motorista selecionados"><img src="/static/admin/img/icon-viewlink.svg" alt="" width="20" height="20"></a>
+    
+</div>
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-veiculo">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required" for="id_veiculo">Veiculo:</label>
+                                
+                                    <div class="related-widget-wrapper" data-model-ref="veiculo">
+    <select name="veiculo" data-context="available-source" required id="id_veiculo">
+  <option value="">---------</option>
+
+  <option value="1" selected>gol - bdv-2556</option>
+
+</select>
+    
+        <a class="related-widget-wrapper-link change-related" id="change_id_veiculo"
+            data-href-template="/admin/tracking/veiculo/__fk__/change/?_to_field=id&amp;_popup=1"
+            data-popup="yes"
+            title="Alterar veiculo selecionado"><img src="/static/admin/img/icon-changelink.svg" alt="" width="20" height="20"></a><a class="related-widget-wrapper-link add-related" id="add_id_veiculo"
+            data-popup="yes"
+            href="/admin/tracking/veiculo/add/?_to_field=id&amp;_popup=1"
+            title="Adicionar outro veiculo"><img src="/static/admin/img/icon-addlink.svg" alt="" width="20" height="20"></a><a class="related-widget-wrapper-link view-related" id="view_id_veiculo"
+             data-href-template="/admin/tracking/veiculo/__fk__/change/?_to_field=id"
+             title="Visualizar veiculo selecionados"><img src="/static/admin/img/icon-viewlink.svg" alt="" width="20" height="20"></a>
+    
+</div>
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-destino">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required" for="id_destino">Destino:</label>
+                                
+                                    <input type="text" name="destino" value="CZS" class="vTextField" maxlength="255" required id="id_destino">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-odometro_inicial">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required" for="id_odometro_inicial">Odometro inicial:</label>
+                                
+                                    <input type="number" name="odometro_inicial" value="5656" class="vIntegerField" required id="id_odometro_inicial">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-data_partida">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required">Data partida:</label>
+                                
+                                    <p class="datetime">
+  Data: <input type="text" name="data_partida_0" value="16/12/2024" class="vDateField" size="10" required id="id_data_partida_0">
+
+<br>
+  Hora: <input type="text" name="data_partida_1" value="15:53:03" class="vTimeField" size="8" required id="id_data_partida_1">
+
+
+</p>
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-odometro_final">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label for="id_odometro_final">Odometro final:</label>
+                                
+                                    <input type="number" name="odometro_final" class="vIntegerField" id="id_odometro_final">
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-data_chegada">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label>Data chegada:</label>
+                                
+                                    <p class="datetime">
+  Data: <input type="text" name="data_chegada_0" class="vDateField" size="10" id="id_data_chegada_0">
+
+<br>
+  Hora: <input type="text" name="data_chegada_1" class="vTimeField" size="8" id="id_data_chegada_1">
+
+
+</p>
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+        <div class="form-row field-status">
+            
+            
+                <div>
+                    
+                        <div class="flex-container">
+                            
+                                <label class="required" for="id_status">Status:</label>
+                                
+                                    <select name="status" id="id_status">
+  <option value="em andamento" selected>Em andamento</option>
+
+  <option value="finalizada">Finalizada</option>
+
+  <option value="agendada">Agendada</option>
+
+  <option value="cancelada">Cancelada</option>
+
+</select>
+                                
+                            
+                        </div>
+                    
+                </div>
+            
+            
+        </div>
+    
+    
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+
+<input type="submit" value="Salvar" class="default" name="_save">
+
+<input type="submit" value="Salvar e adicionar outro(a)" name="_addanother">
+<input type="submit" value="Salvar e continuar editando" name="_continue">
+
+
+    
+    <a href="/admin/tracking/viagem/1/delete/" class="deletelink">Remover</a>
+
+
+</div>
+
+
+
+    <script id="django-admin-form-add-constants"
+            src="/static/admin/js/change_form.js"
+            
+            async>
+    </script>
+
+
+
+
+<script id="django-admin-prepopulated-fields-constants"
+        src="/static/admin/js/prepopulate_init.js"
+        data-prepopulated-fields="[]">
+</script>
+
+
+</div>
+</form></div>
+
+          
+          <br class="clear">
+        </div>
+        <!-- END Content -->
+      </main>
+    </div>
+    <footer id="footer"></footer>
+</div>
+<!-- END Container -->
+
+<!-- SVGs -->
+<svg xmlns="http://www.w3.org/2000/svg" class="base-svgs">
+  <symbol viewBox="0 0 24 24" width="1rem" height="1rem" id="icon-auto"><path d="M0 0h24v24H0z" fill="currentColor"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2V4a8 8 0 1 0 0 16z"/></symbol>
+  <symbol viewBox="0 0 24 24" width="1rem" height="1rem" id="icon-moon"><path d="M0 0h24v24H0z" fill="currentColor"/><path d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z"/></symbol>
+  <symbol viewBox="0 0 24 24" width="1rem" height="1rem" id="icon-sun"><path d="M0 0h24v24H0z" fill="currentColor"/><path d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"/></symbol>
+</svg>
+<!-- END SVGs -->
+</body>
+</html>

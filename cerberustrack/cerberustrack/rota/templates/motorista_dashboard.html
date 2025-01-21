@@ -1,0 +1,27 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Motorista</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo, {{ user.username }}!</h1>
+    </header>
+    <main>
+        <p>Aqui você verá as suas viagens</p>
+        <ul>
+            {% for viagem in viagens %}
+                <li>{{ viagem.motorista }} - {{ viagem.destino }} - {{ viagem.data_partida }}</li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 CerberusTrack</p>
+    </footer>
+</body>
+</html>
